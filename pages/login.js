@@ -1,17 +1,24 @@
-import { Link } from '../routes'
-
+import Link from 'next/link'
+import Layout from '../components/Layout'
 import {
-  Form,
+  Input,
 } from 'antd'
 
 export default () => (
-  <>
+  <Layout>
     <h1>Login</h1>
-    <Form>
-      <p>Test</p>
-    </Form>
-    <Link route="user-register">
-      <a>Register</a>
-    </Link>
-  </>
+    <Input />
+    <ul>
+      <li>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/register">
+          <a>Register</a>
+        </Link>
+      </li>
+    </ul>
+  </Layout>
 )

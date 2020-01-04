@@ -1,3 +1,20 @@
+import Link from 'next/link'
+import Layout from '../components/Layout'
+
 export default () => (
-  <h1>Homepage</h1>
+  <Layout>
+    <h1>Homepage</h1>
+    <ul>
+      <li>
+        <Link href="/login">
+          <a>Login</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/register">
+          <a>Register</a>
+        </Link>
+      </li>
+    </ul>
+  </Layout>
 )
